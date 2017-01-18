@@ -152,7 +152,7 @@ shell(){
 
       if check_ack
       then
-          echo -e "\t\tThere's your shell. Enjoy it! Press Ctrl+C to exit"
+          echo -e "\t\tHere's your shell. Enjoy it! Press Ctrl+C to exit"
           while [ 1 ]; do
                 echo -ne "$PROMPT"
                 read CMD
