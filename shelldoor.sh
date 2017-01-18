@@ -73,7 +73,7 @@ as_a_server(){
 
       if grep "HI:" <<< "$REQ" &> /dev/null; then
          TARGET=$(cut -d':' -f2 <<< "$REQ")
-         echo "[+] Received $TARGET"
+        #  echo "[+] Received $TARGET"
 
       elif grep "SHELL" <<< "$REQ" &> /dev/null; then
           send_ack
