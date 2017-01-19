@@ -2,7 +2,9 @@
 
 **SHELLDOOR**
 
-A simple backdoor written in Shell Script.
+A simple backdoor written in Shell Script. 
+
+BUG: maybe you'll need execute the script two or more times to get a connection (Netcat bug). 
 
 Functions:
 * execute remote commands;
