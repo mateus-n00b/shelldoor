@@ -21,6 +21,7 @@
 
 #  Global vars
 TARGET=""
+# If you gets some errors here, insert your IP on MYIP var.
 MYIP=$(/bin/ip addr show $int | grep 'inet ' | awk '{print $2}' | sed 's/\/.*//' | tail -1)
 FILE=""
 ACK=""
