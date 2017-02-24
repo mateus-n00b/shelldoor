@@ -11,13 +11,14 @@ Functions:
 * upload files;
 * take screenshots.
 
-Mateus-n00b, January 2016
+Mateus-n00b, January 2017
 
 Version 1.0
 
 TODO:
 
 -Fix the function to get the ip "MYIP" variable.
+
 -Perform more tests.
 
 BUG:
